@@ -103,8 +103,8 @@ public class RegistrationActivity extends AppCompatActivity {
                 map.put("Contact No.", phone.getText().toString());
                 map.put("Address",address.getText().toString());
                 map.put("City",city.getText().toString());
-                map.put("email",email.getText().toString());
-                map.put("password",pass.getText().toString());
+                map.put("Email",email.getText().toString());
+                map.put("Password",pass.getText().toString());
                 firestore.collection("Users").document(email.getText().toString()).set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
