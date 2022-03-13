@@ -7,4 +7,7 @@
     <string name="address">Address</string>
     <string name="email">Email</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="welcome_back">Welcome Back \nPlease Sign in</string>
+    <string name="login">Login</string>
 </resources>

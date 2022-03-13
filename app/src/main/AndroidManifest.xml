@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExampleChattApp">
         <activity
-            android:name="com.example.dmr.examplechatapp.activities.RegistrationActivity"
-            android:screenOrientation="fullSensor"
+            android:name=".activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.dmr.examplechatapp.activities.MainActivity"
+            android:name=".activities.RegistrationActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
