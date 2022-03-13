@@ -3,6 +3,7 @@ package com.example.dmr.examplechatapp.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Patterns;
 
 import com.example.dmr.examplechattapp.R;
 import com.google.android.material.button.MaterialButton;
@@ -36,5 +37,43 @@ public class RegistrationActivity extends AppCompatActivity {
         signup=findViewById(R.id.signup);
         firestore=FirebaseFirestore.getInstance();
         auth=FirebaseAuth.getInstance();
+    }
+
+    boolean validate(){
+        if(name.getText().toString().isEmpty()){
+            name.setError("Please enter your name");
+            name.requestFocus();
+            return false;
+        } else if (phone.getText().toString().isEmpty()){
+            phone.setError("Please enter your Phone number");
+            phone.requestFocus();
+            return false;
+        } else if (address.getText().toString().isEmpty()){
+            address.setError("Please enter your Address");
+            address.requestFocus();
+            return false;
+        } else if (city.getText().toString().isEmpty()){
+            city.setError("Please enter your City");
+            city.requestFocus();
+            return false;
+        } else if (email.getText().toString().isEmpty()){
+            email.setError("Please enter your Email");
+            email.requestFocus();
+            return false;
+        } else if(!Patterns.EMAIL_ADDRESS.matcher(email.getText().toString()).matches()){
+            email.setError("Please enter correct Email");
+            email.requestFocus();
+            return false;
+        } else if (!pass.getText().toString().equals(cPass.getText().toString())){
+            pass.setError("Password does not match");
+            pass.requestFocus();
+            return false;
+        } else if (pass.getText().toString().length()<8){
+            pass.setError("Password id too short");
+            pass.requestFocus();
+            return false;
+        } else {
+            return true;
+        }
     }
 }
