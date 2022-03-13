@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dmr.examplechattapp">
+    package="com.example.dmr.examplechatapp">
 
     <application
         android:allowBackup="true"
@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExampleChattApp">
         <activity
-            android:name=".activities.RegistrationActivity"
+            android:name="com.example.dmr.examplechatapp.activities.RegistrationActivity"
             android:screenOrientation="fullSensor"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.example.dmr.examplechatapp.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

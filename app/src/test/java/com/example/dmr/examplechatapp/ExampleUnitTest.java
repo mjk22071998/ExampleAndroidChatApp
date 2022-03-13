@@ -1,4 +1,4 @@
-package com.example.dmr.examplechattapp;
+package com.example.dmr.examplechatapp;
 
 import org.junit.Test;
 

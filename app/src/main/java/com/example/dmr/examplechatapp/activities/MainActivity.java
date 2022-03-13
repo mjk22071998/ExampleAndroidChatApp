@@ -1,10 +1,10 @@
-package com.example.dmr.examplechattapp.activities;
+package com.example.dmr.examplechatapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.dmr.examplechattapp.R;
+import com.example.dmr.examplechatapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
