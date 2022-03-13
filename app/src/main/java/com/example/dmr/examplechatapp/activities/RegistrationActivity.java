@@ -123,7 +123,7 @@ public class RegistrationActivity extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(RegistrationActivity.this, "Invalid email or password", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegistrationActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
                 e.printStackTrace();
             }
         });
